@@ -1,5 +1,6 @@
 import "./globals.css";
 import type { Metadata } from "next";
+import { MainStyle, bodyStyle } from "./globals.style";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -13,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="ko">
-      <body>{children}</body>
+      <body className={bodyStyle}>
+        <main className={MainStyle}>{children}</main>
+      </body>
     </html>
   );
 }
