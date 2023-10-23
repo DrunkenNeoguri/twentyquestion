@@ -1,7 +1,12 @@
 import { TestComponent } from "./components/main.testcomponent";
 
 function MainPage() {
-  return <TestComponent />;
+  return (
+    <>
+      <TestComponent />
+      <div>???? </div>
+    </>
+  );
 }
 
 export default MainPage;
